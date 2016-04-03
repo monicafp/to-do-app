@@ -2,46 +2,99 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do App SÁBADO</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.js" charset="utf-8"></script>
+  <script src="assets/js/bootstrap.js" charset="utf-8"></script>
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ToDo App</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/javascript/script.js">
-    </script>
-  </head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">PEREZOSO</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html" class="active">Today</a></li>
+          <li><a href="all.html">All</a></li>
+          <li><a href="#">Mónica Fornaris Pau</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="main-component-wrapper">
+      <div class="container">
+        <div class="row">
 
-  <body>
+          <!-- <<<STARTS MAIN COMPONENT>>> -->
+          <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 main-component">
 
-    <header>
-      <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">PEREZOSO
-          </a>
+            <!-- <<<STARTS INFO OVERVIEW>>> -->
+            <div id="info-overview" class="row">
+              <div class="col-xs-6">
+                <p>
+                  24
+                </p>
+                <span>Monday</span>
+              </div>
+              <div class="col-xs-6">
+                <p>
+                  25%
+                </p>
+                <span>PROGRESS</span>
+              </div>
+            </div>
+            <!-- <<<ENDS INFO OVERVIEW>>> -->
+
+            <!-- <<<STARTS INFO DIVIDER>>> -->
+            <div class="row info-divider">
+              <div class="col-xs-6">
+                <p>
+                  fecha
+                </p>
+              </div>
+              <div class="col-xs-6">
+                <p>
+                  progress
+                </p>
+              </div>
+            </div>
+            <!-- <<<ENDS INFO DIVIDER>>> -->
+
+            <!-- <<<STARTS TASKS LIST>>> -->
+            <div class="row">
+              <div class="col-xs-12 tasks-list">
+
+                <!-- <<<STARTS LIST ITEM CHECKBOX>>> -->
+                <div class="row tasks-list-item">
+                  <div class="col-xs-12">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value=""> Task 1
+                      </label>
+
+                      <!-- <<<STARTS LIST ITEM HOUR SPAN>>> -->
+                      <span>6:00 AM</span>
+
+                      <!-- <<<ENDS LIST ITEM HOUR SPAN>>> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <<<ENDS LIST ITEM CHECKBOX>>> -->
+              </div>
+            </div>
+            <!-- <<<ENDS TASKS LIST>>> -->
           </div>
-          <div class="collapse navbar-collapse" id="example">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="">Today</a></li>
-              <li><a href="">All</a></li>
-              <li><a href="">Username</a></li>
-              <li role="separator" class="divider"></li>
-              <li id="add-task"><a href="#">+</a></li>
-
-            </ul>
-          </div>
+          <!-- <<<ENDS MAIN COMPONENT>>> -->
         </div>
       </div>
-
-    </header>
-
-  </body>
+    </section>
+  </main>
+</body>
 
 </html>
