@@ -1,24 +1,83 @@
+.info-divider {
+  background-color: #9F3D3C;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.info-divider > div > p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
 .navbar {
   margin-bottom: 0;
 }
 
 .navbar-default {
   background-color: #223843;
-  border-radius: 0;
   border: 0;
+  border-radius: 0;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a{
     color: white;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: rgba(0, 0, 0, .3);
   color: white;
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .navbar-default .navbar-nav > li > a.active {
   background-color: rgba(0, 0, 0, .3);
+}
+
+.tasks-list {
+  max-height: calc(100vh - 456px);
+  overflow-y: scroll;
+}
+
+.tasks-list-item {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.tasks-list-item:last-child {
+  border-bottom: 0;
+}
+
+.tasks-list-item .checkbox {
+  margin: 20px 0;
+}
+
+.tasks-list-item .checkbox > label > input {
+  display: inline;
+  margin-right: 10px;
+  position: relative;
+}
+
+.tasks-list-item .checkbox > span {
+  float: right;
+}
+
+#info-overview > div {
+  padding: 20px 0;
+}
+
+#info-overview > div > p {
+  font-size: 64px;
+  margin-bottom: 0;
+}
+
+#info-overview > div:first-child {
+  border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+#info-overview > div > span {
+  font-size: 18px;
+  letter-spacing: 6.9px;
+  text-transform: uppercase;
 }
 
 #main-component-wrapper {
@@ -34,65 +93,11 @@
 
 #main-component-wrapper .main-component #info-overview {
   background-color: #EB5D5C;
-  text-align: center;
   padding: 20px 0;
-}
-
-#info-overview > div {
-  padding: 20px 0;
-}
-
-#info-overview > div:first-child {
-  border-right: 1px solid rgba(0, 0, 0, .2);
-}
-
-#info-overview > div > p {
-  font-size: 64px;
-  margin-bottom: 0;
-}
-
-#info-overview > div > span {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 6.9px;
-}
-
-.info-divider {
-  background-color: #9F3D3C;
   text-align: center;
-  color: white;
-  padding: 5px 0;
 }
 
-.info-divider > div > p {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-.tasks-list {
-  max-height: calc(100vh - 456px);
-  overflow-y: scroll;
-}
-
-.tasks-list-item {
-  background-color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, .2);
-}
-
-.tasks-list-item: last-child {
-  border-bottom: 0;
-}
-
-.tasks-list-item .checkbox {
-  margin: 20px 0;
-}
-
-.tasks-list-item .checkbox > label > input {
-  position: relative;
-  display; inline;
-  margin-right: 10px;
-}
-
-.tasks-list-item .checkbox > span {
-  float: right;
+#progress {
+  display: block;
+  margin-top: 10px;
 }
